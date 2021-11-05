@@ -2,6 +2,7 @@ from man import *
 from student import *
 
 
+
 class Group:
     def __init__(self, name):
         self.name = name
@@ -33,5 +34,5 @@ group_1.add_st(st_3)
 group_1.add_st(st_4)
 group_1.add_st(st_1)
 group_1.del_st(st_4)
-
+print()
 
