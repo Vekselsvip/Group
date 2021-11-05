@@ -2,11 +2,11 @@ from man import *
 from student import *
 
 
-
 class Group:
     def __init__(self, name):
         self.name = name
         self.students = []
+
     def __str__(self):
         st = []
         for i in self.students:
