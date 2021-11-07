@@ -1,8 +1,12 @@
 from man import *
 from student import *
+from error import InputError
 
 
 class Group:
+    """
+    module for add students in group.
+    """
     def __init__(self, name):
         self.name = name
         self.students = []
@@ -27,11 +31,3 @@ class Group:
         for i in self.students:
             if i.surname == surname:
                 return i
-
-
-group_1 = Group('IT')
-group_1.add_st(st_3)
-group_1.add_st(st_4)
-group_1.add_st(st_1)
-group_1.del_st(st_4)
-
