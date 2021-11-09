@@ -38,7 +38,7 @@ class Group:
                 return i
 
     def __iter__(self):
-        return GroupIterator(self.students)
+        return self
 
 
 group_1 = Group('It')
