@@ -3,6 +3,7 @@ from error import InputError
 
 
 class Student(Man):
+    count = 0
     """
     student creation
     """
@@ -12,5 +13,11 @@ class Student(Man):
         super().__init__(name, surname, ege)
         self.course = course
 
+        Student.count += 1
+
     def __str__(self):
         return f"Student: {super().__str__()}\ncourse -  {self.course}"
+
+
+st_1 = Student('Ivan', 'Ivanoov', '20', 2)
+st_2 = Student('Petr', 'Ivanov', '20', 2)
