@@ -45,4 +45,3 @@ group_1 = Group('It')
 group_1.add_st(st_1)
 group_1.add_st(st_2)
 
-print(group_1)
